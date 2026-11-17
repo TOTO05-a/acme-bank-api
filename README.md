@@ -1,6 +1,49 @@
-# ACME-BANK
+# Acme Bank
 
-Proyecto del curso de Node.js de Campuslands. Es una sucursal virtual estilo cajero
+Sucursal virtual de consola tipo cajero: crea cuentas, consigna, retira, paga servicios y consulta movimientos, con persistencia en un archivo JSON.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![POO](https://img.shields.io/badge/Paradigma-POO-blue)
+![Sin dependencias](https://img.shields.io/badge/dependencias-0-success)
+
+> Proyecto del curso de Node.js de Campuslands. Aunque el repositorio se llama `acme-bank-api`, es una aplicación de **consola** (módulos nativos `fs` y `readline`), no un servidor HTTP.
+
+## Funcionalidades
+
+- Crear cuenta (número consecutivo, documento, nombre y clave).
+- Consignar dinero (no requiere clave).
+- Retirar dinero con autenticación y validación de saldo.
+- Pagar servicios (Energía, Agua, Gas) con autenticación.
+- Consultar movimientos con autenticación.
+- Persistencia automática en `db.json` después de cada operación.
+
+## Stack
+
+Node.js · JavaScript (clases ES6, campos privados `#`) · `fs` y `readline` nativos.
+
+## Requisitos
+
+Node.js 18 o superior. No hay dependencias que instalar ni variables de entorno.
+
+## Ejecución
+
+```bash
+git clone https://github.com/TOTO05-a/acme-bank-api.git
+cd acme-bank-api
+npm start
+```
+
+> **Aviso:** `db.json` guarda las claves de las cuentas en texto plano (es un ejercicio académico). No uses claves reales.
+
+## Autor
+
+**Eduardo Antonio Cruz Bolaños** — [@TOTO05-a](https://github.com/TOTO05-a)
+
+---
+
+## Documentación de diseño
+
 hecha en consola, con persistencia en un archivo JSON (sin bases de datos externas).
 
 ## Estructura del proyecto
