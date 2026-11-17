@@ -44,7 +44,6 @@ npm start
 
 ## Documentación de diseño
 
-hecha en consola, con persistencia en un archivo JSON (sin bases de datos externas).
 
 ## Estructura del proyecto
 
